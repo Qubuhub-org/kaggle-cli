@@ -68,7 +68,8 @@ Follow these [instructions](https://hatch.pypa.io/latest/install/) to install it
 ```sh
 hatch run kaggle datasets list
 ```
-
+>_kaggle kernels pull auraecosystem/save-model99d1ea7037
+>
 #### Option 2: Run many commands in a shell
 
 ```sh
