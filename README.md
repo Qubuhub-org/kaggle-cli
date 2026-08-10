@@ -65,25 +65,29 @@ Follow these [instructions](https://hatch.pypa.io/latest/install/) to install it
 
 #### Option 1: Execute a one-liner of code from the command line
 
-```sh
+```shell
 hatch run kaggle datasets list
 ```
->_kaggle kernels pull auraecosystem/save-model99d1ea7037
+```console
+kaggle kernels pull auraecosystem/save-model99d1ea7037
+```
 >
 #### Option 2: Run many commands in a shell
 
-```sh
+```ps1
+...
 hatch shell
 
 # Inside the shell, you can run many commands
 kaggle datasets list
 kaggle competitions list
 ...
+
 ```
 
 ### Lint / Format
 
-```sh
+```shell
 # Lint check
 hatch run lint:style
 hatch run lint:typing
@@ -97,7 +101,7 @@ hatch run lint:fmt
 
 Note: These tests are not true unit tests and are calling the Kaggle web server.
 
-```sh
+```bash
 # Run against kaggle.com
 hatch run test:prod
 
@@ -146,9 +150,10 @@ This is useful to run in a consistent environment and easily switch between Pyth
 
 The following shows how to run `hatch run lint:all` but this also works for any other hatch commands:
 
-```
+```bash
 # Use default Python version
-./docker-hatch run lint:all
+~./docker-hatch run lint:all
+hatch run kaggle datasets list
 ```
 
 ## Changelog
