@@ -6,3 +6,4 @@ hatch shell
 kaggle datasets list
 kaggle competitions list
 ...
+$ hatch run test:cov
